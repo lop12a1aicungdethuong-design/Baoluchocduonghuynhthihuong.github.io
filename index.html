@@ -1,152 +1,798 @@
 <!DOCTYPE html>
+
 <html lang="vi">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phòng Chống Bạo Lực Học Đường</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+     <meta http-equiv="REFRESH" content="567" />
+
+    <title>A1BEST | Phòng chống bạo lực học đường của trường</title>
+
+    <!-- Bootstrap  CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Ngoài -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+    <!--Mới thêm-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logocirle.png">
+    <!--End-->
+    <!--Font-->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <header>
 
-<header>
-  <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="logo" class="logo">
-  <h1>Phòng Chống Bạo Lực Học Đường</h1>
-</header>
+        <!-- Điều hướng -->
+        <nav class="fixed-top">
+            <div class="header">
+                <div class="header-left" style="font-family:'Quicksand'">
+                    <i class="fas fa-phone"></i>
+                    <strong>Hotline: 02963. 884321</strong>
+                </div>
+                <div class="header-right" style="font-family:'Quicksand'">
+                    <a href="https://www.tiktok.com/@danemcuasarin">
+                        <i class="fab fa-facebook-f"></i>Facebook</a>
+                    <a href="https://github.com/lop12a1aicungdethuong-design"><i class="fa-solid fa-tty"></i>Liên hệ</a>
+                </div>
+            </div>
+            <style>
+                .header {
+                    background-color: #1e5a75;
+                    color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 50px;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    flex-wrap: nowrap;
+                    /* Giữ nguyên một hàng */
+                }
 
-<nav class="navbar">
-  <a href="#nguyennhan">Nguyên Nhân</a>
-  <a href="#tacdong">Tác Động</a>
-  <a href="#haquagiai">Giải Pháp</a>
-  <a href="#phananh">Phản Ánh</a>
-  <a href="#tuvan">Tư Vấn Tâm Lý</a>
-  <a href="#tuyentruyen">Tuyên Truyền</a>
-</nav>
+                .header-left {
+                    display: flex;
+                    align-items: center;
+                }
 
-<main>
-  <section id="nguyennhan">
-    <h2>1️⃣ Nguyên nhân dẫn đến bạo lực học đường</h2>
-    <ul>
-      <li>Mâu thuẫn cá nhân, ganh đua trong học tập hoặc tình cảm.</li>
-      <li>Ảnh hưởng từ mạng xã hội, trò chơi bạo lực.</li>
-      <li>Thiếu kỹ năng kiểm soát cảm xúc, giao tiếp ứng xử kém.</li>
-      <li>Gia đình thiếu quan tâm, áp lực từ bạn bè hoặc môi trường sống.</li>
-    </ul>
-  </section>
+                .header-left i {
+                    margin-right: 8px;
+                }
 
-  <section id="tacdong">
-    <h2>2️⃣ Tác động của bạo lực học đường</h2>
-    <ul>
-      <li>Gây tổn thương thể chất và tinh thần cho học sinh.</li>
-      <li>Mất tự tin, lo âu, sợ hãi hoặc trầm cảm.</li>
-      <li>Làm xấu hình ảnh nhà trường và ảnh hưởng xã hội.</li>
-    </ul>
-  </section>
+                .header-right {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                }
 
-  <section id="haquagiai">
-    <h2>3️⃣ Hậu quả & Giải pháp</h2>
-    <h3>Hậu quả:</h3>
-    <ul>
-      <li>Ảnh hưởng tâm lý lâu dài, dễ dẫn đến hành vi tiêu cực.</li>
-      <li>Mất đoàn kết, tạo môi trường học tập độc hại.</li>
-    </ul>
-    <h3>Giải pháp:</h3>
-    <ul>
-      <li>Tăng cường giáo dục kỹ năng sống và đồng cảm.</li>
-      <li>Xây dựng câu lạc bộ “Bạn đồng hành”.</li>
-      <li>Tạo kênh tư vấn tâm lý an toàn, thân thiện.</li>
-    </ul>
-  </section>
+                .header-right a {
+                    color: white;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
 
-  <section id="phananh">
-    <h2>4️⃣ Phản ánh ẩn danh</h2>
-    <form id="anonForm">
-      <label for="message">Nội dung phản ánh:</label><br>
-      <textarea id="message" rows="5" placeholder="Hãy chia sẻ điều bạn muốn phản ánh..."></textarea><br>
-      <button type="submit">Gửi phản ánh</button>
-      <p id="thanks" style="display:none;">✅ Cảm ơn bạn! Chúng tôi sẽ xử lý trong thời gian sớm nhất.</p>
-    </form>
-  </section>
+                .header-right a:hover {
+                    text-decoration: underline;
+                }
 
-  <section id="tuvan">
-    <h2>5️⃣ Tư vấn tâm lý</h2>
-    <p>Bạn đang cảm thấy căng thẳng, buồn, hay cần chia sẻ điều gì đó?  
-       Hãy trò chuyện với AI tư vấn tâm lý — người bạn biết lắng nghe và luôn tôn trọng bạn 💬</p>
+                /* Điều chỉnh trên điện thoại (dưới 768px) */
+                @media (max-width: 768px) {
+                    .header {
+                        padding: 5px 20px;
+                        /* Giảm padding */
+                        font-size: 12px;
+                        /* Nhỏ hơn */
+                    }
 
-    <div class="chatbox">
-      <div id="chatlog">
-        <div class="msg bot"><span class="bubble">🤖 Chào bạn! Mình có thể giúp gì cho bạn hôm nay?</span></div>
-      </div>
-      <div class="chat-input">
-        <input type="text" id="userInput" placeholder="Nhập tin nhắn của bạn...">
-        <button id="sendBtn">Gửi</button>
-      </div>
+                    .header-left i,
+                    .header-right a i {
+                        transform: scale(0.8);
+                        /* Thu nhỏ icon */
+                    }
+
+                    .header-right {
+                        gap: 10px;
+                        /* Giảm khoảng cách */
+                    }
+                }
+            </style>
+
+
+
+
+
+
+
+
+
+            <div class="header-x93m_kg">
+                <div class="logo-banner">
+                    <a href="index.php"><img src="https://tse1.mm.bing.net/th/id/OIP.S-vgv4nFTHKjQgLS-XGh3wHaHZ?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Logo Trường"
+                            class="logo"></a>
+                    <img src="https://tthl.xyz/images/banner.png" alt="Tên trường" class="banner-image">
+                </div>
+        
+            </div>
+
+
+            <style>
+                /* Header */
+                .header-x93m_kg {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 50px;
+                    background-color: white;
+                    font-family: Arial, sans-serif;
+                    max-width: 100%;
+                    overflow: hidden;
+                }
+
+                /* Logo + Banner trên cùng một hàng */
+                .logo-banner {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    max-width: 100%;
+                    overflow: hidden;
+                }
+
+                .logo {
+                    height: 90px;
+                    max-width: 100%;
+                }
+
+                .banner-image {
+                    height: 70px;
+                    max-width: 100%;
+                }
+
+                /* Ô tìm kiếm */
+                .search-box {
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+                }
+
+                .search-box input {
+                    padding: 10px;
+                    width: 180px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 14px;
+                }
+
+                .search-box button {
+                    font-family: 'Quicksand';
+                    height: 42px;
+                }
+
+                /* Responsive cho điện thoại */
+                @media (max-width: 768px) {
+                    .header-x93m_kg {
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 10px 20px;
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                    .logo-banner {
+                        flex-direction: row;
+                        /* Giữ logo và banner trên cùng hàng */
+                        justify-content: center;
+                        gap: 5px;
+                        width: 100%;
+                    }
+
+                    .logo {
+                        height: 50px;
+                        /* Thu nhỏ logo */
+                    }
+
+                    .banner-image {
+                        height: 40px;
+                        /* Thu nhỏ banner */
+                    }
+
+                    .search-box {
+                        display: none;
+                        /* Ẩn thanh tìm kiếm trên điện thoại */
+                    }
+                }
+            </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <nav class="menu-bar-927">
+                <ul>
+                    <li><a href="http://thpthuynhthihuong.edu.vn/">TRANG CHỦ</a></li>
+                    <li>
+                        <a href="#">GIỚI THIỆU &nbsp;</a>
+                    </li>
+                    <li>
+                        <a href="#">TIN TỨC &nbsp;<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-927">
+                            <li><a href="youthunionactivities.php" style="font-size:11px">CÁC HOẠT ĐỘNG TUYÊN TRUYỀN</a>
+                            </li>
+                            <li><a href="https://tthl.xyz/" style="font-size:11px">CÁC PHONG TRÀO CỦA TRƯỜNG</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </nav>
+            <marquee class="alert" style="color:#111111;background-color:#0699c6 "><b>Trường THPT Huỳnh Thị Hưởng -
+                    Phòng chống bạo lực học đường</b></marquee>
+            <style>
+                .alert {
+                    border: none;
+                    margin: 0px;
+                    padding: 0px 15px;
+                    border-radius: 0px
+                }
+            </style>
+            <style>
+                /* Thanh menu chính */
+                .menu-bar-927 {
+                    background-color: #1e5a75;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                /* Căn giữa menu */
+                .menu-bar-927 ul {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                /* Căn giữa chữ trong menu */
+                .menu-bar-927 ul li {
+                    position: relative;
+                }
+
+                .menu-bar-927 ul li a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding: 12px 20px;
+                    display: flex;
+                    align-items: center;
+                    transition: background 0.3s, color 0.3s;
+                }
+
+                /* Khi hover vào Trang chủ, Giới thiệu, Tin tức -> nền đỏ */
+                .menu-bar-927 ul li:hover>a {
+                    background: #182db6 !important;
+                    /* Màu đỏ */
+                    color: white !important;
+                }
+
+                /* Dropdown menu */
+                .dropdown-927 {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background: white;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+                    min-width: 250px;
+                    display: none;
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(-10px);
+                    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+                    border-radius: 5px;
+                    padding: 10px 0;
+                }
+
+                /* Hiển thị dropdown khi hover */
+                .menu-bar-927 ul li:hover>.dropdown-927 {
+                    display: block;
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+
+                /* Các mục trong dropdown */
+                .dropdown-927 li {
+                    border-bottom: 1px solid #ddd;
+                    padding: 10px 10px;
+                    transition: color 0.3s;
+                }
+
+                /* Mặc định chữ xám */
+                .dropdown-927 li a {
+                    color: #888888 !important;
+                    /* Màu xám */
+                    font-size: 12px;
+                    font-weight: bold;
+                    display: block;
+                }
+
+                /* Khi hover vào dropdown -> chữ đen, nền giữ nguyên */
+                .dropdown-927 li:hover a {
+                    color: #cd1313 !important;
+                    /* Chữ chuyển sang đen */
+                }
+
+                @media (max-width: 768px) {
+                    .menu-bar-927 {
+                        display: none;
+                    }
+                }
+            </style>
+
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Trang nội dung-->
+        <div class="container">
+
+
+
+            <div class="row" style="margin-top: 15%">
+
+                <!-- Cột bài viết -->
+                <div class="col-md-8">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+    <div class="container">
+        <p><em>"Một lời nói tổn thương – Một hành động vô tình – Có thể khiến ai đó đau mãi. Hãy cùng chúng tôi nói
+                KHÔNG với bạo lực học đường!"
+                Trang web này là nơi chia sẻ câu chuyện, kiến thức và giải pháp giúp học sinh, giáo viên và phụ huynh
+                cùng nhau xây dựng ngôi trường bình yên, nơi ai cũng được tôn trọng và yêu thương.</em></p>
     </div>
-  </section>
+    <div class="container">
+        <h1>Bạo lực học đường là gì?</h1>
+        <p>
+            - Bạo lực học đường là một vấn đề xã hội phức tạp, thể hiện sự suy giảm về đạo đức và kỹ năng ứng xử trong
+            môi trường giáo dục. Nó bao gồm các hành vi dùng lời nói, hành động hoặc quyền lực để gây tổn thương thể
+            chất, tinh thần cho người khác, kể cả trên mạng.
+            <br>- Đây là hậu quả của việc mất cân bằng quyền lực, thiếu tôn trọng và kiểm soát cảm xúc, gây ảnh hưởng
+            nghiêm trọng đến tâm lý, nhân cách học sinh và môi trường giáo dục nói chung.
+        </p>
+        <img src="https://thedeweyschools.edu.vn/wp-content/uploads/2024/03/bao-luc-hoc-duong-1.jpg"
+            alt="Bạo lực học đường là hành vi gây tổn thương cho người khác về thể chất và tinh thần" width="850px"></a>
+            <p><i>Nguồn: Dewey </i></p>
+    </div>
+    <style> </style>
+    <div class="container" id="wrapper">
+         <h1>Thực trạng hiện nay</h1>
+        <p>
+            - Theo UNICEF, bạo lực học đường biểu hiện qua nhiều mặt khác nhau <br>
+            • Bạo lực ngôn từ (verbal bullying): Là việc sử dụng lời nói xúc phạm, châm chọc, miệt thị hoặc đe dọa, gây
+            tổn thương đến danh dự và cảm xúc của người khác. <br>
+            • Bạo lực thân thể (physical bullying) : Bao gồm các hành động như đánh, tát, xô đẩy, giật tóc hay khạc nhổ,
+            gây tổn thương hoặc thương tích cho nạn nhân. <br>
+            • Bạo lực xã hội (social bullying) : Diễn ra khi ai đó bị cô lập, nói xấu, lan truyền tin đồn hay làm bẽ
+            mặt, khiến họ bị tách biệt khỏi tập thể. <br>
+            • Bạo lực mạng (cyber bullying) : Xảy ra khi có hành vi xúc phạm, tung tin thất thiệt hoặc công khai hình
+            ảnh, thông tin cá nhân của người khác trên mạng xã hội, gây tổn hại nghiêm trọng đến tinh thần nạn nhân. </p>
+                <blockquote><em> <b>
+                    “Một cái tát có thể khiến một trái tim tổn thương mãi mãi.”
+                    — Thông điệp từ chiến dịch #NgừngBạoLực
+                </blockquote></em> </b>
+                
+    </div>
+    <div class="container">
+        <h1>Nguyên nhân</h1>
+       <p>Bạo lực học đường không phải tự nhiên xuất hiện mà bắt nguồn từ nhiều yếu tố khác nhau, cả từ phía học sinh, gia đình, nhà trường lẫn môi trường xã hội. Việc nhận diện đúng các nguyên nhân này là bước quan trọng để có biện pháp phòng tránh hiệu quả và xây dựng một môi trường giáo dục an toàn, lành mạnh.</p>
 
-  <section id="tuyentruyen">
-    <h2>6️⃣ Tuyên truyền tích cực</h2>
-    <blockquote>“Học đường là nơi để yêu thương – không phải nơi tổn thương.”</blockquote>
-    <p>Hãy cùng nhau lan tỏa thông điệp yêu thương, tôn trọng và đoàn kết.  
-    Mỗi lời nói tử tế – một hành động nhỏ – đều có thể thay đổi một người khác 🌱</p>
-  </section>
-</main>
 
-<footer>
-  <p>© 2025 - Dự án tuyên truyền phòng chống bạo lực học đường | Nhóm học sinh phát triển</p>
-</footer>
+<h2> Nguyên nhân từ bản thân học sinh </h2>
+<ul>
+<li>Thiếu kỹ năng kiểm soát cảm xúc (dễ nổi nóng, xung đột nhỏ cũng thành đánh nhau).</li>
 
-<script>
-const form = document.getElementById('anonForm');
-const thanks = document.getElementById('thanks');
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  thanks.style.display = 'block';
-  form.reset();
-});
+<li>Muốn thể hiện bản thân, chứng tỏ sức mạnh.</li>
 
-// --- Chat Messenger Style ---
-const chatlog = document.getElementById('chatlog');
-const input = document.getElementById('userInput');
-const btn = document.getElementById('sendBtn');
+<li>Tính cách hung hăng, bốc đồng, thiếu kiên nhẫn.</li>
 
-btn.addEventListener('click', sendMessage);
-input.addEventListener('keypress', e => {
-  if (e.key === 'Enter') {
-    e.preventDefault();
-    sendMessage();
-  }
-});
+<li>Ảnh hưởng từ game bạo lực, phim ảnh, mạng xã hội.</li>
 
-function sendMessage() {
-  const text = input.value.trim();
-  if (!text) return;
-  appendMessage(text, "user");
-  input.value = '';
+<li>Stress học tập dẫn đến cáu gắt, dễ gây mâu thuẫn.</li>
+</ul>
 
-  setTimeout(() => {
-    const reply = aiReply(text);
-    appendMessage(reply, "bot");
-  }, 700);
-}
 
-function appendMessage(msg, type) {
-  const div = document.createElement('div');
-  div.classList.add('msg', type);
-  div.innerHTML = `<span class="bubble">${msg}</span>`;
-  chatlog.appendChild(div);
-  chatlog.scrollTop = chatlog.scrollHeight;
-}
+<h2>Nguyên nhân từ gia đình</h2>
+<ul>
+<li>Gia đình thiếu quan tâm, ít trò chuyện với con.</li>
 
-function aiReply(text) {
-  text = text.toLowerCase();
-  if (text.includes('buồn')) return "😔 Mình hiểu cảm giác đó. Bạn không cô đơn đâu nhé ❤️";
-  if (text.includes('mệt')) return "🌿 Hãy nghỉ ngơi một chút và hít thở sâu nhé!";
-  if (text.includes('bị bắt nạt')) return "😢 Điều đó không ổn. Hãy nói với thầy cô hoặc người bạn tin tưởng nhé!";
-  if (text.includes('cô đơn')) return "🤗 Mình ở đây để lắng nghe bạn. Cứ thoải mái nói ra nhé!";
-  return "💬 Cảm ơn bạn đã chia sẻ. Mình luôn ở đây để lắng nghe bạn!";
-}
-</script>
+<li>Bị cha mẹ la mắng, bạo hành, khiến trẻ học theo hành vi bạo lực.</li>
+
+<li>Môi trường sống có xung đột, con nhìn thấy và bắt chước.</li>
+
+<li>Không được giáo dục về giá trị sống, đạo đức.</li>
+</ul>
+
+<h2>Nguyên nhân từ nhà trường</h2>
+<ul>
+<li>Quản lý học sinh chưa chặt chẽ, xử lý mâu thuẫn chậm.</li>
+
+<li>Thiếu hoạt động giáo dục kỹ năng sống, kỹ năng giải quyết xung đột.</li>
+
+<li>Một số giáo viên thiên vị, khiến học sinh bức xúc.</li>
+
+<li>Không có kênh hỗ trợ tâm lý để học sinh chia sẻ vấn đề.</li>
+</ul>
+
+<h2>Nguyên nhân từ bạn bè và môi trường xã hội</h2>
+<ul>
+<li>Bè phái, nhóm bạn xấu lôi kéo.</li>
+
+<li>Bắt nạt để giải trí, đùa cợt quá đà.</li>
+
+<li>Áp lực đồng trang lứa, sợ bị tẩy chay nên làm theo nhóm.</li>
+
+<li>Mạng xã hội lan truyền tin xấu, kích động chửi nhau, thách đấu.</li>
+</ul>
+ 
+
+    <iframe width="600" height="400" src="https://www.youtube.com/embed/vASJsOuxJUs?si=if6i67H3VlQe3Mvn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p><i>Nguồn: Dr PSY Việt Nam</i></p>
+    </div>
+    <div class="container">
+        <h1>Hậu quả</h1>
+        <p>
+            Bạo lực học đường gây ra những hậu quả vô cùng nghiêm trọng và ảnh hưởng trực tiếp đến sự phát triển toàn diện của học sinh.<br>
+            
+        Trước hết,<b>về mặt thể chất</b> , nạn nhân có thể bị trầy xước, chấn thương, gãy xương hoặc thậm chí gặp nguy hiểm đến tính mạng nếu bị tấn công nghiêm trọng. Những tổn thương này không chỉ gây đau đớn tức thời mà còn có thể để lại di chứng lâu dài, ảnh hưởng đến sức khỏe và sinh hoạt hằng ngày.<br>
+
+<b>Về mặt tinh thần</b>, tác hại còn nặng nề hơn. Những học sinh bị bạo lực thường rơi vào trạng thái lo âu, sợ hãi, trầm cảm, mất ngủ hoặc luôn sống trong cảm giác bị đe dọa. Các em dễ trở nên tự ti, thu mình, ngại giao tiếp và mất niềm tin vào bản thân. Nghiêm trọng hơn, một số em có thể nảy sinh ý nghĩ tiêu cực, chán nản học tập hoặc thậm chí hành vi tự làm tổn thương chính mình.</p>
+    </div>
+    <div class="container">
+        <h1>Giải pháp</h1>
+        <p>Bạo lực học đường là hành vi tiêu cực, cần được loại bỏ nhằm bảo vệ những học sinh đang phải chịu nhiều hậu quả xấu do nó gây ra. Theo <b>Nghị định 80/2017/NĐ-CP</b>, việc phòng, chống bạo lực học đường được thực hiện qua các nội dung sau:</p>
+
+<h2>Công Tác Tuyên Truyền</h2>
+<div class="container">
+<ul>
+
+<li>Truyền đạt các chủ trương, đường lối của Đảng; chính sách pháp luật của Nhà nước; các giá trị truyền thống và lòng tự hào dân tộc.</li>
+
+<li>Thể hiện tâm tư, nguyện vọng, tình cảm và trách nhiệm của học sinh, sinh viên đối với việc xây dựng môi trường giáo dục an toàn, lành mạnh, thân thiện; phản ánh cách ứng xử giữa con người trong các mối quan hệ xã hội.</li>
+Trang bị kiến thức, kỹ năng về nhận diện nguy cơ và tác hại của bạo lực học đường.
+
+<li>Phê phán những hành vi lệch chuẩn, tiêu cực như đua đòi, ham chơi, lối sống hưởng thụ hay các biểu hiện bạo lực, bất bình đẳng.</li>
+
+<li>Tăng cường nhận thức của cán bộ quản lý, giáo viên, người lao động và học sinh về nhiệm vụ đấu tranh chống “diễn biến hòa bình”. </li>
+Việc tuyên truyền được thực hiện qua các phương tiện truyền thông, hội nghị, buổi thảo luận, sinh hoạt tập thể,…
+</ul>
+</div>
+
+<h2>Phòng ngừa bạo lực học đường</h2> 
+
+<p>Phòng ngừa bạo lực học đường nhằm giúp học sinh, sinh viên có kiến thức và kỹ năng tự bảo vệ bản thân. Nhà trường cần trang bị cho các em hiểu biết về các dạng bạo lực, cách nhận biết nguy cơ và hướng xử lý khi gặp tình huống nguy hiểm. Đồng thời, cơ sở giáo dục phải chuẩn bị các điều kiện, trang thiết bị và môi trường an toàn để giảm thiểu rủi ro, giúp ngăn chặn bạo lực xảy ra ngay từ đầu.</p>
+<h2>Hỗ trợ học sinh khi có nguy cơ bị bạo lực</h2> 
+<div class="container">
+<ul>
+
+<li>Tổ chức gặp gỡ, tìm hiểu và cảnh báo học sinh, sinh viên về nguy cơ có thể xảy ra bạo lực học đường.</li>
+
+<li>Tư vấn, hướng dẫn các biện pháp cần thiết giúp các em tự bảo vệ và phòng tránh.</li>
+
+<li>Phối hợp chặt chẽ với gia đình và các cơ quan, tổ chức liên quan để hỗ trợ những em có nguy cơ bị bạo lực.</li>
+</ul>
+</div>
+<h2>Xử lý khi xảy ra bạo lực học đường</h2> 
+<div class="container">
+<ul>
+<li>Can thiệp kịp thời, cô lập và khống chế người có hành vi bạo lực, ngăn chặn hậu quả tiếp diễn.</li>
+
+<li>Báo cáo ngay cho cơ quan có thẩm quyền. Nếu vụ việc vượt quá khả năng của cơ sở giáo dục, phải liên hệ ngay chính quyền hoặc cơ quan chức năng để xử lý theo đúng quy định pháp luật.</li>
+
+<li> Đánh giá mức độ tổn thương của nạn nhân và nhanh chóng thực hiện các biện pháp sơ cứu, hỗ trợ y tế. Tiếp tục theo dõi và có biện pháp bảo vệ an toàn cho nạn nhân những ngày sau đó.</li>
+
+<li>Thông báo kịp thời cho gia đình nạn nhân để cùng phối hợp xử lý, đảm bảo vụ việc được giải quyết nhanh chóng và triệt để.  </li>
+</ul>
+<hr style-color="red" >
+</div>
+</div>
 
 </body>
+
+
+
+
+
+
+
+
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+
+
+        }
+
+        .container h1 {
+            font-size: 32px;
+        }
+
+
+        .container p {
+            font-size: 17px;
+            list-height: 1.6;
+
+        }
+
+
+        .container {
+            margin: 0 auto;
+            width: 900px;
+        }
+
+
+
+        .container img {
+            max-width: 650px;
+
+        }
+
+
+
+
+        .container ul{
+            font-size: 17px;
+        }
+    </style>
+
+    <footer id="footer-927" style="font-family: 'Arial', sans-serif;">
+        <div class="footer-container-927">
+            <div class="footer-left-927">
+                <h3>TRƯỜNG THPT HUỲNH THỊ HƯỞNG</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Hội An, An Giang</p>
+                <p><i class="fas fa-phone"></i> Điện thoại: 07778. 66787 </p>
+                <p><i class="fas fa-phone-alt"></i> Hotline: 029638. 84321</p>
+
+
+
+
+
+
+
+
+                <p><i class="far fa-eye"></i> Tổng lượt xem: 1</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p><i class="fas fa-envelope"></i> Email: <a
+                        href="http://thpthuynhthihuong.edu.vn/">angiang-thpthuynhthihuong@edu.viettel.vn</a></p>
+                <p><i class="fas fa-globe"></i> Website: <a
+                        href="http://thpthuynhthihuong.edu.vn/">thpthuynhthihuong.edu.vn</a></p>
+            </div>
+
+            <div class="footer-right-927">
+                <div class="map-container-927">
+                    <h3>BẢN ĐỒ</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d125563.68813701953!2d105.4670393!3d10.4322657!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x310a6fcac4fc393d%3A0x1cb02aa50d74456c!2zQ0dKWCtXUTgsIMSQVDk0MiwgSOG7mWkgQW4sIENo4bujIE3hu5tpLCBBbiBHaWFuZw!3m2!1d10.4322933!2d105.5494746!5e0!3m2!1svi!2s!4v1739595919948!5m2!1svi!2s"
+                        width="150%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="fanpage-container-927">
+                    <h3></h3>
+                    <!-- Thêm page nếu có -->
+                    <iframe width="100%" height="315" src="" title="" YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-927">
+            <p>© 2025 - Trường THPT Huỳnh Thị Hưởng</p>
+        </div>
+    </footer>
+
+    <style>
+        /* Footer tổng */
+        #footer-927 {
+            background-color: #1e5a75;
+            color: white;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container chính */
+        .footer-container-927 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 90%;
+            margin: auto;
+        }
+
+        /* Cột bên trái */
+        .footer-left-927 {
+            width: 50%;
+            min-width: 280px;
+        }
+
+        .footer-left-927 h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-left-927 p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .footer-left-927 a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        .footer-left-927 a:hover {
+            text-decoration: underline;
+        }
+
+        /* Cột bên phải */
+        .footer-right-927 {
+            width: 45%;
+            min-width: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Tiêu đề cột bên phải */
+        .footer-right-927 h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Bản đồ */
+        .map-container-927 {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .map-container-927 iframe {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        /* Fanpage */
+        .fanpage-container-927 {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto 0 auto;
+        }
+
+        /* Dòng bản quyền */
+        .footer-bottom-927 {
+            background-color: #1e5a75;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .footer-container-927 {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-left-927,
+            .footer-right-927 {
+                width: 100%;
+            }
+
+            .footer-right-927 {
+                align-items: center;
+            }
+        }
+    </style>
+    </footer>
+</body>
+
 </html>
